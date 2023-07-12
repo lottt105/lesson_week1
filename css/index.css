@@ -12,6 +12,7 @@ header {
 main {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   height: 500px;
 }
 
@@ -28,5 +29,6 @@ img {
 section {
   background-color: #f7ffe5;
   padding: 20px;
+  margin: 10px;
   border-radius: 5px;
 }
