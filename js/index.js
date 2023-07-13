@@ -40,14 +40,28 @@
 // const plus = cal.plus(5, 5);
 // console.log(plus);
 
-let str = "JS 실습(반복문)";
-console.log(str);
+// let str = "JS 실습(반복문)";
+// console.log(str);
 
-let arr = [...str];
-for (let i = 0; i < arr.length; i++) {
-  console.log(`${i} : ${arr[i]}`);
-}
+// let arr = [...str];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(`${i} : ${arr[i]}`);
+// }
 
-for (let i in arr) {
-  console.log(`${i}(in) : ${arr[i]}`);
+// for (let i in arr) {
+//   console.log(`${i}(in) : ${arr[i]}`);
+// }
+
+console.log("JS 실습(논리 연산자)");
+//1~30까지
+// 3의 배수면 "fizz"
+// 5의 배수면 "buzz"
+// 3, 5의 배수면 "fizzbuzz"
+// 나머진 그냥 출력
+
+for (let i = 1; i <= 30; i++) {
+  if (i % 3 === 0 && i % 5 === 0) console.log("fizzbuzz");
+  else if (i % 3 === 0) console.log("fizz");
+  else if (i % 5 === 0) console.log("buzz");
+  else console.log(i);
 }
