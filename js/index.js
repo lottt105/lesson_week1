@@ -23,19 +23,31 @@
 //     break;
 // }
 
-console.log("JS 실습(객체와 함수)");
+// console.log("JS 실습(객체와 함수)");
 
-const person = {
-  greet: function () {
-    return "hello";
-  },
-};
+// const person = {
+//   greet: function () {
+//     return "hello";
+//   },
+// };
 
-console.log(person.greet());
+// console.log(person.greet());
 
-const cal = {
-  plus: (a, b) => a ** b,
-};
+// const cal = {
+//   plus: (a, b) => a ** b,
+// };
 
-const plus = cal.plus(5, 5);
-console.log(plus);
+// const plus = cal.plus(5, 5);
+// console.log(plus);
+
+let str = "JS 실습(반복문)";
+console.log(str);
+
+let arr = [...str];
+for (let i = 0; i < arr.length; i++) {
+  console.log(`${i} : ${arr[i]}`);
+}
+
+for (let i in arr) {
+  console.log(`${i}(in) : ${arr[i]}`);
+}
