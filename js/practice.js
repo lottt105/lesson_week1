@@ -23,4 +23,4 @@ const getMax = (arr) => {
 };
 
 console.log(getMax([1, 2, 3, 4]));
-console.log(getMax([5, 3, 9, 3, 10]));
+console.log(getMax([5, 3, 9, 20, 3, 10]));
