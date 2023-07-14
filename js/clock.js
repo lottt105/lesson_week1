@@ -6,9 +6,9 @@ const getTime = () => {
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  clockTitle.innerText = `${hours}:${minutes}:${
+  clockTitle.innerText = `${hours}:${minutes < 10 ? `0${minutes}` : minutes}:${
     seconds < 10 ? `0${seconds}` : seconds
   }`;
 };
 
-setInterval(getTime, 1000);
+//setInterval(getTime, 1000);
