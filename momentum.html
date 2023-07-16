@@ -7,32 +7,35 @@
     <title>Momentum 실습</title>
   </head>
   <body>
-    <div class="js-weather">
-      <img class="weather-icon" alt="wIcon" />
-      <span class="temperatures"></span>
+    <div class="container">
+      <div class="js-weather">
+        <img class="weather-icon" alt="wIcon" />
+        <span class="temperatures"></span>
+      </div>
+      <main>
+        <div class="js-clock">
+          <h1>00:00:00</h1>
+        </div>
+
+        <form class="js-form">
+          <input type="text" placeholder="이름이 무엇인가요?" />
+        </form>
+
+        <h4 class="js-greetings"></h4>
+
+        <div class="js-todo">
+          <h4>Todo</h4>
+          <form class="js-todoForm">
+            <input type="text" placeholder="할 일을 적어주세요!" />
+          </form>
+          <div class="js-todoList"></div>
+        </div>
+      </main>
+
+      <script src="./js/clock.js"></script>
+      <script src="./js/greet.js"></script>
+      <script src="./js/weather.js"></script>
+      <script src="./js/todo.js"></script>
     </div>
-
-    <div class="js-clock">
-      <h1>00:00:00</h1>
-    </div>
-
-    <form class="js-form">
-      <input type="text" placeholder="이름이 무엇인가요?" />
-    </form>
-
-    <h4 class="js-greetings"></h4>
-
-    <div class="js-todo">
-      <h4>Todo</h4>
-      <form class="js-todoForm">
-        <input type="text" placeholder="할 일을 적어주세요!" />
-      </form>
-      <div class="js-todoList"></div>
-    </div>
-
-    <script src="./js/clock.js"></script>
-    <script src="./js/greet.js"></script>
-    <script src="./js/weather.js"></script>
-    <script src="./js/todo.js"></script>
   </body>
 </html>

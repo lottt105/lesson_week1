@@ -1,8 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.js-weather {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0 15px 20px;
+}
+
+.weather-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.temperatures {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-clock {
+  font-size: 50px;
+}
+
 .js-form {
   display: none;
 }
 
-.js-todoList input {
+.js-form input {
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+.js-greetings {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.js-todo {
+  width: 200px;
+}
+
+.js-todo h4 {
+  margin: 10px 0 5px;
+}
+
+.js-todo input {
+  border: 0;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+
+.js-todo p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 8px;
 }
 
 .show {

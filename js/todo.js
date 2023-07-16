@@ -7,8 +7,8 @@ const todoList = document.querySelector(".js-todoList");
 
 const deleteTodo = (todo) => {
   let todos = JSON.parse(localStorage.getItem("todoList"));
-  todos.splice(todos.indexOf(todo), 1);
-  localStorage.setItem("todoList", JSON.stringify(todos));
+  let newTodos = todos.filter((t) => t !== todo);
+  localStorage.setItem("todoList", JSON.stringify(newTodos));
   loadTodo();
 };
 
@@ -17,7 +17,7 @@ const handleDeleteClick = (e) => {
   const todoText = p.innerText;
 
   todoList.innerHTML = "";
-  deleteTodo(todoText.slice(0, todoText.length - 1));
+  deleteTodo(todoText.slice(0, todoText.length - 2));
 };
 
 const showTodos = (localTodo) => {
@@ -27,7 +27,7 @@ const showTodos = (localTodo) => {
       const p = document.createElement("p");
       const deleteButton = document.createElement("button");
       deleteButton.append("X");
-      deleteButton.onclick = function (e, i) {
+      deleteButton.onclick = function (e) {
         handleDeleteClick(e);
       };
       p.append(todo, deleteButton);
