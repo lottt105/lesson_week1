@@ -2,6 +2,9 @@
   display: none;
 }
 
+.js-todoList input {
+}
+
 .show {
   display: block;
 }
