@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const bg = document.querySelector(".background");
 
 const backgroundImages = [
   "1.jpg",
@@ -16,4 +16,4 @@ const getRandom = () => {
   return Math.floor(Math.random() * backgroundImages.length);
 };
 
-container.style.backgroundImage = `url(./img/${backgroundImages[getRandom()]})`;
+bg.style.backgroundImage = `url(./img/${backgroundImages[getRandom()]})`;
